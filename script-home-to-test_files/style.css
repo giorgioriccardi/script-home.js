@@ -1,0 +1,456 @@
+/*
+Theme Name:    Customizr-Pro Child
+Theme URI:      http://www.themesandco.com/customizr-pro
+Description:    Custom theme for KS Blog
+Author:         Giorgio Riccardi
+Author URI:     http://www.giorgioriccardi.com
+Template:       customizr-pro
+Version:        1.0.0
+*/
+
+
+/* 
+COLORS:
+
+blue: #54BCEB
+grey: #808080
+red: #C0000
+yellow: #ff9900
+green: #009933
+*/
+
+@media screen and (min-width: 980px) {
+  /*desktop*/ 
+}
+
+@media screen and (max-width: 979px) {
+  /*mobile*/
+}
+
+@media (min-width: 300px) and (max-width: 979px) {
+  /*custom*/
+}
+
+/*********************************************************************************
+*********************************************************************************
+*********************************************************************************
+*********************************************************************************
+**********************************************************************************/
+
+
+
+/*********************************************************************************
+*********************************************************************************
+*********************************************************************************
+*********************************************************************************
+**********************************************************************************/
+
+body {
+  /*background-color: #fff;
+  background-repeat: repeat-x;
+  margin: 0 auto !important;
+  max-width: 1200px !important;  
+  padding: 0;*/
+
+  /*font-family: 'Ubuntu', 'sans-serif';*/
+  /* font-family: 'PT Sans', sans-serif; */
+  /*font-family: 'Lato', sans-serif;*/
+
+  /*font-size: 1em;*/
+  /* line-height: 1.4; */
+}
+
+body,
+.tc-header {
+  background-color: #ffffff;
+  margin: 0 auto !important;
+  max-width: 1200px !important;
+}
+
+body * {
+  text-shadow: none !important;
+}
+
+div,
+*, 
+*:before, 
+*:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  
+  /* border: 1px dashed blue; */ /* debug */
+}
+
+.debug {
+  border: thin red solid;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+/* Remove Navbar box */
+.navbar .navbar-inner {
+  /*-webkit-box-shadow: none;
+  -moz-box-shadow:    none;
+  box-shadow:         none;
+  background:         none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow:    none;
+  box-shadow:         none; */ 
+}
+
+
+
+/*********************************************************************************
+*********************************************************************************
+**********************************************************************************/
+
+/*MENU*/
+
+
+/* Adding an HTML5 search form in your WordPress menu */
+
+/* my-nav-menu-search menu item created in functions.php. Move it way over to the right */
+.notresp.navbar .nav .my-nav-menu-search {
+    float: right;
+}
+.notresp.navbar .nav {
+    width: 100%;
+}
+ 
+/*Stop the display of the Search button*/
+.my-nav-menu-search .search-submit {
+    display: none;
+}
+/* The "Search for" text is needed for screen readers, but we move it off screen, so we won't see it */
+.my-nav-menu-search .search-form .screen-reader-text {
+    position: absolute;
+    left: -9999px;
+    overflow: hidden;
+}
+ 
+/* Style the search input textbox */
+.my-nav-menu-search .search-field {
+    background: transparent;
+    border: none;
+    -webkit-box-shadow:    none;
+    -moz-box-shadow:       none;
+    box-shadow:            none;
+    cursor: pointer;
+    height: 26px;
+    margin: 2px 0 2px 0;
+    padding: 0 0 0 36px;
+    position: relative;
+    -webkit-transition: width 400ms ease;
+    -moz-transition:    width 400ms ease;
+    -o-transition:      width 400ms ease;
+    transition:         width 400ms ease;
+    width: 0px;
+}
+ 
+/* Expand the search box when you click it */
+.my-nav-menu-search .search-field:active,
+.my-nav-menu-search .search-field:focus {
+    color: #5a5a5a;
+    /* change the colour above if you are working with a dark navbar background */
+    border: 2px solid #c3c0ab;
+    cursor: text;
+    outline: 0;
+    width: 70px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow:    none;
+    box-shadow:         none;
+    margin: 0;
+}
+ 
+/* Add a magnifying glass background */
+.my-nav-menu-search .search-form:before {
+    font-family: 'genericons';
+    content: '\f400';
+    position: absolute; /* this is the key to put it visually inside the search field */
+    font-size: 19px;
+    font-weight: normal;
+    padding-top: 5px; /* tune this vertical alignment inside the search field, as needed */
+    padding-left: 5px; /* tune this horizontal alignment inside the search field, as needed */
+ 
+}
+/*end of Adding an HTML5 search form in your WordPress menu*/
+/*http://themesandco.com/snippet/adding-an-html5-search-form-in-your-wordpress-menu/*/
+
+
+/*Add “MENU” text to 3-bar Menu button*/
+.btn-navbar {
+  width:          60px;
+  height:         30px;
+  vertical-align: top;
+}
+.btn-navbar:after {
+  content:        "Menu";
+  float:          right;
+  margin:         -5px 5px 0 0;
+}
+
+
+/*********************************************************************************
+*********************************************************************************
+**********************************************************************************/
+
+/*SLIDER*/
+
+
+
+
+/*********************************************************************************
+*********************************************************************************
+**********************************************************************************/
+
+
+
+/*HOME PAGE*/
+
+
+
+/*********************************************************************************
+*********************************************************************************
+**********************************************************************************/
+
+
+
+/*CONTENT*/
+
+
+
+/*********************************************************************************
+*********************************************************************************
+**********************************************************************************/
+
+
+
+/*SIDEBAR*/
+
+
+
+/*********************************************************************************
+*********************************************************************************
+**********************************************************************************/
+
+/*temporary settings*/
+
+.round-div {
+  /*border: none;*/
+}
+
+.search-term {
+  color: #A73227;
+  background-color: yellow;
+}
+
+
+.home .front-page.span4 {
+  margin-left: 0;
+  width: 33%;
+}
+
+
+
+/*old home*/
+
+
+/*.clearer {
+    clear: both;
+    height: 0;
+}*/
+/*#home-boxes {
+    bottom: 0;
+    left: 175px;
+    position: absolute;
+}
+#home-boxes .box-home {
+    bottom: 0;
+    position: absolute;
+    text-align: left;
+    width: 255px;
+}
+#home-boxes .box-home .menu-bar-color {
+    height: 155px;
+    position: relative;
+    width: 72px;
+}
+#home-boxes .box-home .menu-bar-color .logo-section-home {
+    display: block;
+    left: 0;
+    position: absolute;
+    top: -72px;
+}
+#home-boxes .box-home .menu-bar-color .ict-section-home {
+    display: none;
+}
+#home-boxes .box-home .news-box {
+    bottom: 5px;
+    font-size: 10px;
+    height: 80px;
+    left: 80px;
+    line-height: 12px;
+    position: absolute;
+    width: 150px;
+}
+#home-boxes .box-home .news-box h3 {
+    font-size: 10px;
+    margin-bottom: 2px;
+}
+#home-boxes .box-home .news-box .more-link {
+    margin-top: 2px;
+}
+#home-boxes .box-home .news-box .more-link a {
+    text-decoration-color: -moz-use-text-color;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+}
+#home-boxes .box-home .menu-link {
+    display: none;
+    font-size: 15px;
+    font-weight: 600;
+    left: 80px;
+    line-height: 15px;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+    position: absolute;
+    text-transform: lowercase;
+    top: 68px;
+}
+#home-boxes .box-home .menu-link li {
+    display: block;
+    margin-bottom: 10px;
+}
+#home-boxes .box-home .menu-link li a {
+    display: block;
+    text-decoration-color: -moz-use-text-color;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+}
+#home-boxes #azienda-home {
+    left: 0;
+}
+#home-boxes #pubblico-home {
+    left: 255px;
+}
+#home-boxes #privato-home {
+    left: 510px;
+}*/
+
+#home-boxes #azienda-home .menu-bar-color, #page-section-azienda .menu-bar {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #cc0000;
+    /*background-image: url("./images/text-home-azienda.png");*/
+    background-origin: padding-box;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+}
+#home-boxes #pubblico-home .menu-bar-color, #page-section-pubblico .menu-bar {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #009933;
+    /*background-image: url("./images/text-home-pubblico.png");*/
+    background-origin: padding-box;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+}
+#home-boxes #privato-home .menu-bar-color, #page-section-privato .menu-bar {
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: #ff9900;
+    /*background-image: url("./images/text-home-privato.png");*/
+    background-origin: padding-box;
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: auto auto;
+}
+/*#home-boxes #azienda-home .news-box h3 {
+    color: #cc0000;
+}
+#home-boxes #azienda-home .news-box .more-link a {
+    color: #cc0000;
+}
+#home-boxes #pubblico-home .news-box h3 {
+    color: #009933;
+}
+#home-boxes #pubblico-home .news-box .more-link a {
+    color: #009933;
+}
+#home-boxes #privato-home .news-box h3 {
+    color: #ff9900;
+}
+#home-boxes #privato-home .news-box .more-link a {
+    color: #ff9900;
+}
+#home-boxes #azienda-home .menu-link a {
+    color: #cc0000;
+}
+#home-boxes #pubblico-home .menu-link a {
+    color: #009933;
+}
+#home-boxes #privato-home .menu-link a {
+    color: #ff9900;
+}*/
+
+.box-home.span4 {
+    float: left;
+    text-align: left;
+    width: 30%;
+    margin-left: 10px;
+}
+
+.menu-bar-color {
+  width: 100px;
+}
+
+@media screen and (min-width: 980px) {
+  .news-box {
+      bottom: 120px;
+      left: 105px;
+      position: relative;
+      width: 50%;
+  }
+}
+
+
+/*sidebar bg shapes*/
+
+.widget.widget_nav_menu { 
+    /*position: relative; 
+    height: 160px; 
+    width: 400px; 
+    padding: 0px; */
+    background-color: #cc0000; 
+    /*top: 0px; 
+    left: 0px; 
+    -webkit-transform: rotate(90deg) skew(20deg); 
+    transform: rotate(90deg) skew(20deg);*/ 
+}
+
+.menu-menu-laterale-container { 
+    /*position: relative; 
+    height: 160px; 
+    width: 400px; 
+    padding: 0px;*/
+
+    /*background-color: #428BCA;*/
+
+    /*top: 0px; 
+    left: 0px; 
+    -webkit-transform: rotate(-70deg) skew(20deg); 
+    transform: rotate(-70deg) skew(20deg);*/ 
+}
