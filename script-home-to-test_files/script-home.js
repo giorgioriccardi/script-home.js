@@ -26,7 +26,8 @@ jQuery(document).ready(function($) {
 			});
 		});
 
-		function openBar(barBox) {
+		//function openBar(barBox) {
+		var openBar = function (barBox) {
 			locking[barBox.attr('id')] = 1;
 			barBox.animate({
 				height: '380px'
@@ -38,12 +39,13 @@ jQuery(document).ready(function($) {
 				$(this).parent().children(".menu-link").each(function() {
 					$(this).fadeIn(500);
 				});
-				setTimeout(function() { closeBar(barBox) }, 3000);
+				setTimeout(function() { closeBar(barBox) }, 1000);
 
 			});
 		}
 
-		function closeBar(barBox) {
+		//function closeBar(barBox) {
+		var closeBar = function (barBox) {
 			barBox.children(".ict-section-home").each(function() {
 				$(this).fadeOut(100);
 			});
@@ -60,6 +62,3 @@ jQuery(document).ready(function($) {
 		}
 
 });
-
-// removed $ in front of the arguments
-// http://stackoverflow.com/questions/29146893/why-sometimes-in-javascript-there-is-the-dollar-sign-arg-before-function-argu
