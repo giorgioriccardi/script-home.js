@@ -61,5 +61,5 @@ jQuery(document).ready(function($) {
 
 });
 
-// removed $ infront of the arguments
+// removed $ in front of the arguments
 // http://stackoverflow.com/questions/29146893/why-sometimes-in-javascript-there-is-the-dollar-sign-arg-before-function-argu
