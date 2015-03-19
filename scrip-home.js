@@ -59,4 +59,4 @@ jQuery(document).ready(function($) {
 			});
 		}
 
-});
+}); // end of jQuery noConflict Wrappers for WordPress
