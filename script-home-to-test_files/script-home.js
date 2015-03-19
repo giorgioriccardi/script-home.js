@@ -2,15 +2,15 @@ jQuery(document).ready(function($) {
     // Inside of this function, $() will work as an alias for jQuery()
     // and other libraries also using $ will not be accessible under this shortcut
 
-		oldBox = "#box-home";
+		var oldBox = "#box-home";
 
-		moveArray = new Array('+=470','-=470');
+		var moveArray = new Array('+=470','-=470');
 
-		locking = new Array();
+		var locking = new Array();
 
-		indexmovement = 1;
+		var indexmovement = 1;
 
-		zindex_count = 10;
+		var zindex_count = 10;
 
 		//lock=0;
 
@@ -26,9 +26,9 @@ jQuery(document).ready(function($) {
 			});
 		});
 
-		function openBar($barBox) {
-			locking[$barBox.attr('id')] = 1;
-			$barBox.animate({
+		function openBar(barBox) {
+			locking[barBox.attr('id')] = 1;
+			barBox.animate({
 				height: '380px'
 			}, 500, function() {
 				// Animation complete.
@@ -38,25 +38,28 @@ jQuery(document).ready(function($) {
 				$(this).parent().children(".menu-link").each(function() {
 					$(this).fadeIn(500);
 				});
-				setTimeout(function() { closeBar($barBox) }, 3000);
+				setTimeout(function() { closeBar(barBox) }, 3000);
 
 			});
 		}
 
-		function closeBar($barBox) {
-			$barBox.children(".ict-section-home").each(function() {
+		function closeBar(barBox) {
+			barBox.children(".ict-section-home").each(function() {
 				$(this).fadeOut(100);
 			});
-			$barBox.parent().children(".menu-link").each(function() {
+			barBox.parent().children(".menu-link").each(function() {
 				$(this).fadeOut(300, function() {
-					$barBox.animate({
+					barBox.animate({
 						height: '155px'
 					}, 500, function() {
 						// Animation complete.
-						locking[$barBox.attr('id')] = 0;
+						locking[barBox.attr('id')] = 0;
 					});
 				});
 			});
 		}
 
 });
+
+// removed $ infront of the arguments
+// http://stackoverflow.com/questions/29146893/why-sometimes-in-javascript-there-is-the-dollar-sign-arg-before-function-argu
